@@ -23,5 +23,6 @@ setup
 Ejecute el siguiente comando en el terminal:
 
 ```bash
+python -m src.build_model
 pytest
 ```
