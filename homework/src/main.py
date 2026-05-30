@@ -32,5 +32,5 @@ def main():
     save_model_if_better(model, x_test, y_test)
 
 
-if name == "main":
+if __name__ == "__main__":
     main()
