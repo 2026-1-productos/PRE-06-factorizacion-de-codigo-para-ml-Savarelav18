@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Test
-        setup-command: "./setup.sh"
+        setup-command: "pip3 install -r requirements.txt && pip3 install -e . && python3 -m homework --model elasticnet --alpha 0.5 --l1_ratio 0.5"
         command: pytest
         timeout: 10
         max-score: 1
